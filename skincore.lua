@@ -70,7 +70,7 @@ end
 local win = gui.Window("skin", "Skin Changer", 10, 10, 500, 450)
 
 -- Weapons
-local wg = gui.Groupbox(win, "Weapons", 10, 10, 230, 280)
+local wg = gui.Groupbox(win, "Weapons", 10, 10, 2300, 280)
 local wl = gui.Listbox(wg, "", 10, 20, 210, 240)
 local wn = {}
 for k, v in pairs(Weapons) do table.insert(wn, k) end
