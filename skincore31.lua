@@ -70,8 +70,8 @@ end
 local win = gui.Window("skin", "Skin Changer31", 10, 10, 500, 450)
 
 -- Weapons
-local wg = gui.Groupbox(win, "Weapons", 10, 10, 500, 600)
-local wl = gui.Listbox(wg, "", 10, 20, 480, 580)
+local wg = gui.Groupbox(win, "Weapons", 10, 10, 500, 450)
+local wl = gui.Listbox(wg, "", 10, 20, 450, 400)
 local wn = {}
 for k, v in pairs(Weapons) do table.insert(wn, k) end
 table.sort(wn)
