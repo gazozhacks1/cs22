@@ -29,10 +29,10 @@ local function fetch(url, cacheFile)
     return nil
 end
 
-local src, where = fetch(BASE .. "skincore.lua", ".\\my_skinchanger_lua\\skincore.lua")
+local src, where = fetch(BASE .. "skincore31.lua", ".\\my_skinchanger_lua\\skincore31.lua")
 if not src then print("[loader] FATAL: cannot fetch skincore.lua") return end
 
-local chunk, err = loadstring(src, "=skincore.lua")
+local chunk, err = loadstring(src, "=skincore31.lua")
 if not chunk then print("[loader] compile error: " .. tostring(err)) return end
 
 _G.MY_SKIN_BASE = BASE
