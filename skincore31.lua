@@ -67,10 +67,10 @@ end
 --  GUI - ONE WINDOW WITH EVERYTHING
 -- ============================================================
 
-local win = gui.Window("skin", "Skin Changer31", 10, 10, 500, 450)
+local win = gui.Window("skin", "Skin Changer31", 100, 100, 700, 600)
 
 -- Weapons
-local wg = gui.Groupbox(win, "Weapons", 10, 10, 500, 450)
+local wg = gui.Groupbox(win, "Weapons", 15,  20, 300, 1000)
 local wl = gui.Listbox(wg, "", 10, 20, 450, 400)
 local wn = {}
 for k, v in pairs(Weapons) do table.insert(wn, k) end
@@ -79,7 +79,7 @@ wl:SetItems(wn)
 wl:SetValue(1)
 
 -- Skins
-local sg = gui.Groupbox(win, "Skins", 250, 10, 230, 280)
+local sg = gui.Groupbox(win, "Skins", 350,  20, 300, 5000)
 local sl = gui.Listbox(sg, "", 10, 20, 210, 240)
 local sn = {}
 for k, v in pairs(Skins) do table.insert(sn, k) end
@@ -88,7 +88,7 @@ sl:SetItems(sn)
 sl:SetValue(1)
 
 -- Settings
-local stg = gui.Groupbox(win, "Settings", 10, 300, 470, 80)
+local stg = gui.Groupbox(win, "Settings", 15, 330, 300, 300)
 
 local wt = gui.Text(stg, "Wear / Float:", 10, 20, 80, 20)
 local ws = gui.Slider(stg, "", 100, 20, 200, 20)
@@ -103,7 +103,7 @@ ss:SetValue(0)
 local sv = gui.Text(stg, "0", 310, 45, 50, 20)
 
 -- Actions
-local ag = gui.Groupbox(win, "Actions", 10, 390, 470, 40)
+local ag = gui.Groupbox(win, "Actions", 350,  20, 300, 700)
 
 local ab = gui.Button(ag, "Apply", function()
     local wi = wl:GetValue()
