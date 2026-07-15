@@ -67,7 +67,7 @@ end
 --  GUI - ONE WINDOW WITH EVERYTHING
 -- ============================================================
 
-local win = gui.Window("skin", "Skin Changer", 10, 10, 500, 450)
+local win = gui.Window("skin", "Skin ChangerrR", 10, 10, 500, 450)
 
 -- Weapons
 local wg = gui.Groupbox(win, "Weapons", 10, 10, 500, 600)
